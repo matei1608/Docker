@@ -32,9 +32,9 @@ gcc -Wall -Werror -lcap -lseccomp contained.c -o contained
 You have to run the executable as `root` (via `sudo`) because setting up namespaces, cgroups, and mounting filesystems requires host-level privileges.
 
 **Syntax:**
-` ` `bash
+` `bash
 sudo ./contained -m <rootfs_dir> -u <uid> -c <command> [args...]
-` ` `
+` `
 
 **Example:**
 If you want to pop a shell inside the container, using the current directory (`.`) as the root filesystem, running as UID `0`:
